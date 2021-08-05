@@ -8,7 +8,7 @@ export const BrowserComponent = () => {
     return (
         <div className = 'main-browser-container'>
             <div>
-                <input type = 'text' placeholder = 'Copy Embedded URL' 
+                <input type = 'text' placeholder = 'Copy Embedded URL then press Enter' 
                 value = {url.url_link}
                  onChange = {(e) => {
                      e.preventDefault();
