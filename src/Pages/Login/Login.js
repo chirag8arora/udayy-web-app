@@ -11,7 +11,7 @@ export const Login = () => {
     const [password ,setPassword] = useState('');
 
     const handleSubmit = (e) => {
-        if(password === 'udayy') {
+        if(password === 'udayy' && userName !== '') {
             window.location.href = `/home/${userName}`;
         }
         else {
@@ -21,7 +21,7 @@ export const Login = () => {
      return (
          <div className = "main-login-container">
              <div className = "login-container">
-                 <div style = {{display : 'flex'}}>
+                 <div style = {{display : 'flex',flexWrap:'wrap'}}>
                     <img src={logo} style={{width: '150px'}} alt =""/>
                     <img src={logoToolbar} style={{width: '171px',height : '48px', margin : 'auto'}} alt =""/>
                  </div>
